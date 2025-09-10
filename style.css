@@ -1,0 +1,100 @@
+body {
+    /* The essential animated, tiling background */
+    background-image: url('https://www.cameronsworld.net/img/backgrounds/5.gif');
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    color: #FFFFFF; /* White text for readability? No, for style! */
+    font-size: 18px;
+}
+
+.header h1 {
+    font-family: "Papyrus", fantasy;
+    color: #00FF00; /* Neon green */
+    font-size: 3em;
+    text-shadow: 3px 3px 0 #FF00FF; /* A tasteful pink drop shadow */
+}
+
+.nav {
+    text-align: center;
+    font-size: 1.2em;
+    word-spacing: 20px;
+}
+
+.nav a {
+    color: #FFFF00; /* Bright yellow links */
+    font-weight: bold;
+}
+
+.nav a:visited {
+    color: #FF00FF; /* Hot pink visited links */
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h2 {
+    font-family: "Curlz MT", cursive;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.emphasis {
+    font-style: italic;
+    font-size: 1.1em;
+    color: #00FFFF; /* Cyan */
+}
+
+.fact {
+    color: #FFD700; /* Gold */
+    font-weight: bold;
+}
+
+.construction-text {
+    color: #FF0000; /* Red */
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+}
+
+/* This simulates the deprecated <blink> tag! So retro! */
+blink {
+    animation: 1s linear infinite blink-effect;
+}
+
+@keyframes blink-effect {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* For that awesome rainbow text effect on the heading */
+.rainbow-text {
+    animation: rainbow 2s infinite;
+}
+
+@keyframes rainbow {
+    0% { color: red; }
+    15% { color: orange; }
+    30% { color: yellow; }
+    45% { color: green; }
+    60% { color: blue; }
+    75% { color: indigo; }
+    90% { color: violet; }
+    100% { color: red; }
+}
+
+/* Trailing cursor styles */
+.cursor-trail {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-image: url('https://www.cameronsworld.net/img/content/2/4.gif'); /* A sparkly star */
+    background-size: contain;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease-out;
+}
